@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8"> 
+    <title>Java Express</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/jpg" href="hqdefault.jpg">
+</head>
+<body>
+    <article>
+        <header>
+            <h1>Java Express</h1>
+            <p>Compilando sabor, entregando energia.</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#cadastro">Cadastre-se</a></li>
+            </ul>
+        </nav>
+
+        <div class="container-layout">
+            <main>
+                <section>
+                    <h2>Energia para o seu Código</h2>
+                    <p>A JavaExpress une a robustez do ecossistema Java à agilidade do mercado digital...</p>
+                </section>
+
+                <section id="cadastro">
+                    <h2>Cadastre-se no Java Express</h2>
+                    <form>
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo"><br><br>
+
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" placeholder="dev@exemplo.com"><br><br>
+
+                        <label for="senha">Senha:</label><br>
+                        <input type="password" id="senha" name="senha"><br><br>
+
+                        <label for="cidade">Cidade/Estado:</label><br>
+                        <select id="cidade" name="cidade">
+                            <option value="bh">Belo Horizonte - MG</option>
+                            <option value="sp">São Paulo - SP</option>
+                            <option value="rj">Rio de Janeiro - RJ</option>
+                            <option value="curitiba">Curitiba - PR</option>
+                            <option value="recife">Recife - PE</option>
+                        </select><br><br>
+
+                        <p>Gênero:</p>
+                        <input type="radio" id="masc" name="genero" value="m"> <label for="masc">Masculino</label>
+                        <input type="radio" id="fem" name="genero" value="f"> <label for="fem">Feminino</label><br><br>
+
+                        <label for="msg">Apresentação pessoal:</label><br>
+                        <textarea id="msg" name="msg" rows="4"></textarea><br><br>
+
+                        <button type="submit">Enviar Cadastro</button>
+                    </form>
+                </section>
+            </main>
+
+            <aside>
+                <h2>Conteúdos complementares</h2>
+                <p>Informações complementares sobre a Java Express.</p>
+            </aside>
+        </div> <footer id="contato">
+            <hr>
+            <section>
+                <h3>Entre em contato:</h3>
+                <p><strong>Telefone:</strong> (31) 2946-0248</p>
+                <p><strong>E-mail:</strong> <a href="mailto:contato@javaexpress.com.br">contato@javaexpress.com.br</a></p>
+            </section>
+            <address>
+                <p>Av. da Tecnologia, 1024 - Belo Horizonte - MG</p>
+            </address>
+        </footer>
+    </article>
+</body>
+</html>

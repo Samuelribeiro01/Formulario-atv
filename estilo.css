@@ -1,0 +1,108 @@
+/* Seu código original */
+body {
+    font-family: Georgia, serif;
+    background-color: #d6ce9b;
+    color: #4E342E;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    scroll-behavior: smooth; /* Adicionei para o link deslizar */
+}
+
+.container-layout {
+    display: flex;     
+    flex-direction: row; 
+    flex-wrap: wrap;   
+    padding: 20px;
+    gap: 20px;          
+}
+
+main {
+    flex: 3;            
+    min-width: 300px;
+}
+
+aside {
+    flex: 1;            
+    min-width: 200px;
+    background-color: #b4a77e;
+    padding: 15px;
+    border-left: 5px solid #c5b78d; 
+}
+
+header h1 {
+    color: #8b0000;
+    border-bottom: 2px solid #363225; 
+    display: inline-block;
+    margin: 20px;
+}
+
+nav ul {
+    background-color: #3c252f;
+    padding: 15px;      
+    list-style: none;
+    margin: 0;
+    display: flex;     
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #e37910;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: auto;   
+    padding: 20px;
+    color: #4E342E;
+}
+
+/* AJUSTES PARA O FORMULÁRIO (Novo) */
+form {
+    background-color: #c5b78d;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="tel"], 
+select, 
+textarea {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #3c252f;
+    border-radius: 4px;
+    font-family: Arial, sans-serif; /* Melhor leitura nos campos */
+}
+
+button {
+    background-color: #3c252f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e37910;
+}
