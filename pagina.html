@@ -32,32 +32,32 @@
                 <section id="cadastro">
                     <h2>Cadastre-se no Java Express</h2>
                     <form>
+                        <input type="hidden" id="ip_usuario" name="ip_usuario">
+                        <input type="hidden" id="provedor_usuario" name="provedor_usuario">
                         <label for="nome">Nome:</label><br>
                         <input type="text" id="nome" name="nome" placeholder="Seu nome completo"><br><br>
 
                         <label for="email">E-mail:</label><br>
                         <input type="email" id="email" name="email" placeholder="dev@exemplo.com"><br><br>
 
-                        <label for="cep">CEP:</label><br>
-                        <input type="text" id="cep" name="cep" maxlength="9" placeholder="00000-000"><br><br>
-                        
-                        <label for="rua">Rua:</label><br>
-                        <input type="text" id="rua" name="rua" placeholder="Rua aparecerá aqui" readonly><br><br>
-
-                        <label for="bairro">Bairro:</label><br>
-                        <input type="text" id="bairro" name="bairro" placeholder="Bairro aparecerá aqui" readonly><br><br>
-
                         <label for="senha">Senha:</label><br>
                         <input type="password" id="senha" name="senha"><br><br>
 
-                        <label for="cidade">Cidade/Estado:</label><br>
-                        <select id="cidade" name="cidade">
-                            <option value="bh">Belo Horizonte - MG</option>
-                            <option value="sp">São Paulo - SP</option>
-                            <option value="rj">Rio de Janeiro - RJ</option>
-                            <option value="curitiba">Curitiba - PR</option>
-                            <option value="recife">Recife - PE</option>
-                        </select><br><br>
+                        <label>Cadastro de Endereço</label>
+                        <input type="text" id="cep" placeholder="Digite o seu CEP">
+                        <input type="text" id="rua" placeholder="Rua">
+                        <input type="text" id="bairro" placeholder="Bairro">
+                        <input type="text" id="cidade" placeholder="Cidade">
+                        <input type="text" id="estado" placeholder="Estado">
+                        <input type="text" id="pais" placeholder="País">
+
+                        <label for="cnpj">CNPJ:</label>
+                        <input type="text" id="cnpj" name="cnpj" placeholder="CNPJ">
+                        <input type="text" name="razao_social" placeholder="Razão Social">
+                        <input type="text" id="nome_fantasia" name="nome_fantasia" readonly placeholder="Nome fantasia">
+                        <input type="text" id="situacao" name="situacao" readonly placeholder="Situação Cadastral">
+                        <input type="text" id="estado_empresa" placeholder="Estado">
+                        <br><br>
 
                         <p>Gênero:</p>
                         <input type="radio" id="masc" name="genero" value="m"> <label for="masc">Masculino</label>
